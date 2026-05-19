@@ -6,7 +6,7 @@
 <title>My Favorite Makeup Brands: Home</title>
 </head>
 <body>
-<img src= " " alt="Banner image" 
+<img src= "" alt="Banner image" 
 
 <hr>
 
