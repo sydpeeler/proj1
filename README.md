@@ -1,5 +1,3 @@
-# proj1
-
 <!DOCTYPE html>
 <html>
 <head>
