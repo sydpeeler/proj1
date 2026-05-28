@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-<title>Sample JavaScript</title>
+<title>Sydney's 1 Function Calculator</title>
 
 <script>
-
+function add() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) + Number(b);
+document.getElementById("ans").innerHTML = c;
+}
   
 </script>
 
@@ -13,19 +18,15 @@
 <body>
 
 
-<h3>This is a sample</h3>
+<h3>Sydney's 1 Function Calculator</h3>
 
-<p> What is your name? <input = "firstname"
-<button> Enter </button>
+<p>First number? <input id="fn"> <br>
+Second number? <input id="sn"> <br>
+<button onclick="add()"> + </button>
 
 </p>
-  
-<script>
-
-  
-</script>
-
-
+<p>
+    Your Answer is: <span id="ans"> ________ </span></p>
   
 </body>
 </html>
