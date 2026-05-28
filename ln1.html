@@ -16,60 +16,33 @@ document.getElementById("ans").innerHTML = c;
    " If you have a $" + PV +
    "loan for " + n +  
    "years at " + r +
-   "% interest, your monthly payment will be $";
-   
+   "% interest, your monthly payment will be $";  
   
-}
-
-function sub() {
-let a = document.getElementById("fn").value;
-let b = document.getElementById("sn").value;
-let c = Number(a) - Number(b);
-document.getElementById("ans").innerHTML = c;
-}
-
-function div() {
-let a = document.getElementById("fn").value;
-let b = document.getElementById("sn").value;
-let c = Number(a) / Number(b);
-document.getElementById("ans").innerHTML = c;
-}
-
-function mul() {
-let a = document.getElementById("fn").value;
-let b = document.getElementById("sn").value;
-let c = Number(a) * Number(b);
-document.getElementById("ans").innerHTML = c;
-}
-
-function exp() {
-let a = document.getElementById("fn").value;
-let b = document.getElementById("sn").value;
-let c = Number(a) ** Number(b);
-document.getElementById("ans").innerHTML = c;
 }
 
 </script>
 
-  
 </head>
+  
 <body>
 
+<h2>Sydney's Loan Calculator</h2>
 
-<h3>Sydney's 4 Function Calculator</h3>
-
-<p>First number? <input id="fn"> <br>
-Second number? <input id="sn"> <br>
-<button onclick="add()"> + </button>
-<button onclick="sub()"> - </button>
-<button onclick="div()"> / </button>
-<button onclick="mul()"> * </button>
-<button onclick="exp()"> ** </button>
-
-
+<p> 
+Loan Amount: 
+<input id="loan" type="number"> 
 </p>
-<p>
-    Your Answer is: <span id="ans"> ________ </span></p>
+
+<p> 
+Number of Years: 
+<input id="years" type="number"> 
+</p> 
+
+<p> Annual Interest Rate: 
+<input id="rate" type="number" step="0.01"> 
+</p> 
+
+<button onclick="pmt()">Calculate Payment</button> <p id="ans"></p>
   
 </body>
 </html>
