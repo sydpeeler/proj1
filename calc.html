@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<title>Sydney's 4 Function Calculator</title>
+
+<script>
+function add() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) + Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function sub() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) - Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function div() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) / Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function mul() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) * Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function exp() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) ** Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+</script>
+
+  
+</head>
+<body>
+
+
+<h3>Sydney's 4 Function Calculator</h3>
+
+<p>First number? <input id="fn"> <br>
+Second number? <input id="sn"> <br>
+<button onclick="add()"> + </button>
+<button onclick="sub()"> - </button>
+<button onclick="div()"> / </button>
+<button onclick="mul()"> * </button>
+<button onclick="exp()"> ** </button>
+
+
+</p>
+<p>
+    Your Answer is: <span id="ans"> ________ </span></p>
+  
+</body>
+</html>
