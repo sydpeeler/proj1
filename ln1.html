@@ -8,9 +8,8 @@ function pmt() {
 let PV = document.getElementById("loan").value;
 let r = document.getElementById("rate").value;
 let n = document.getElementById("years").value;
-document.getElementById("ans").innerHTML = c;
   
-  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
 
  document.getElementById("ans").innerHTML = P.toFixed(2)
    " If you have a $" + PV +
@@ -42,7 +41,9 @@ Number of Years:
 <input id="rate" type="number" step="0.01"> 
 </p> 
 
-<button onclick="pmt()">Calculate Payment</button> <p id="ans"></p>
+<button onclick="pmt()">Calculate Payment</button> 
+
+<p id="ans"></p>
   
 </body>
 </html>
