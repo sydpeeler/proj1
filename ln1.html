@@ -12,12 +12,12 @@ document.getElementById("ans").innerHTML = c;
   
   let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
 
-  P = P.toFixed(2);
-
- document.getElementById("ans").innerHTML =
-        "For a loan amount of $" + PV +
-        ", over " + n + " years, at an interest rate of " +
-        r + "%, the monthly payment is $" + P + ".";
+ document.getElementById("ans").innerHTML = P.toFixed(2)
+   " If you have a $" + PV +
+   "loan for " + n +  
+   "years at " + r +
+   "% interest, your monthly payment will be $";
+   
   
 }
 
