@@ -9,7 +9,8 @@ let PV = document.getElementById("fn").value;
 let r = document.getElementById("sn").value;
 let n = document.getElementById("sn").value;
 document.getElementById("ans").innerHTML = c;
-
+  
+  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
 
 }
 
