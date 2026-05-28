@@ -12,11 +12,7 @@ let n = document.getElementById("years").value;
 let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
 
  document.getElementById("ans").innerHTML =
-   " If you have a $" + PV +
-   " loan for " + n +  
-   " years at " + r +
-   "% interest, your monthly payment will be $" +
-   P.toFixed(2) + ".";  
+   " If you have a $" + PV + " loan for " + n + " years at " + r + "% interest, your monthly payment will be $" + P.toFixed(2) + ".";  
   
 }
 
